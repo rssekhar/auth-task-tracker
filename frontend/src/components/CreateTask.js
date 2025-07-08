@@ -19,7 +19,7 @@ const CreateTask = ({list,setList}) => {
     setList([...list,newTask])
     // console.log(list)
     try {
-      const res = await axios.post("http://localhost:5000/tasks/addTask",task)
+      const res = await axios.post("https://task-tracker-backend-sius.onrender.com/tasks/addTask",task)
       const data = await res.data;
       if(data)
       {
