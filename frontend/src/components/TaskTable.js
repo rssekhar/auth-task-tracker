@@ -12,7 +12,7 @@ const TaskTable = ({ list, setList }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res_api = await axios.get("http://localhost:5000/tasks/getAllTasks");
+        const res_api = await axios.get("https://task-tracker-backend-sius.onrender.com/tasks/getAllTasks");
         setData(res_api.data);
       } catch (error) {
         console.log('fetch error', error);
@@ -44,7 +44,7 @@ const TaskTable = ({ list, setList }) => {
   const handleEditSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.put(`http://localhost:5000/tasks/updateTask/${editId}`, task);
+      const res = await axios.put(`https://task-tracker-backend-sius.onrender.com/tasks/updateTask/${editId}`, task);
       alert(res.data.message);
 
       // Update local data
@@ -64,7 +64,7 @@ const TaskTable = ({ list, setList }) => {
     if (!confirmDelete) return;
 
     try {
-      const res = await axios.delete(`http://localhost:5000/tasks/deleteTask/${id}`);
+      const res = await axios.delete(`https://task-tracker-backend-sius.onrender.com/tasks/deleteTask/${id}`);
       alert(res.data.message);
       setData(prev => prev.filter(task => task._id !== id));
     } catch (error) {
