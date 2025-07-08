@@ -23,7 +23,7 @@ const Register = () => {
             cpassword: data.cpassword
         }
         // console.log(newUser);
-        axios.post("http://localhost:5000/register", newUser).then(
+        axios.post("https://task-tracker-backend-sius.onrender.com/register", newUser).then(
             (res) => {
                 alert(res.data.message);
                 navigate('/login')
