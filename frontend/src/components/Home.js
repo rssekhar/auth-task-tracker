@@ -19,7 +19,7 @@ const Home = () => {
         }
 
         if (token || localToken) {
-            axios.get('http://localhost:5000/home', {
+            axios.get('https://task-tracker-backend-sius.onrender.com/home', {
                 headers: {
                     'X-Token': token || localToken
                 }
