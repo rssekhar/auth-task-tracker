@@ -1,0 +1,41 @@
+/* ------ new styles */
+form {
+    border: 1px solid black;
+    padding: 10px;
+    height: auto;
+    width: 46%;
+    text-align: left;
+    margin: 5em auto;
+
+}
+
+form>div {
+    margin: 10px;
+
+}
+
+form label::after {
+    content: '*';
+    color: red;
+}
+
+form input {
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    font-size: 12px;
+    outline: 0px;
+    border: 0px;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(240, 135, 98);
+    color: white;
+    border: none;
+    outline: 0px;
+}
