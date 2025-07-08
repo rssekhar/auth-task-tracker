@@ -1,6 +1,6 @@
 import React,{useState} from "react"
-import CreateTask from './Tasks/CreateTask.js';
-import TaskTable from './Tasks/TaskTable.js';
+import CreateTask from './CreateTask.js';
+import TaskTable from './TaskTable.js';
 const TaskDashboard = () => {
   const [list,setList] = useState([])
   return (
