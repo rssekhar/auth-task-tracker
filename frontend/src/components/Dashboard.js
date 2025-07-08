@@ -1,5 +1,5 @@
 
-import TaskDashboard from './TaskDashboard.js';
+import TaskDashboard from 'TaskDashboard.js';
 const Dashboard = (props) => {
     console.log(props);
     return (
