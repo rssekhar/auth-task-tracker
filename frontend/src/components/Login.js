@@ -24,7 +24,7 @@ const Login = () => {
             password: data.password
         }
         // console.log(newUser);
-        axios.post("http://localhost:5000/login", newUser).then(
+        axios.post("https://task-tracker-backend-sius.onrender.com/login", newUser).then(
             (res) => {
                 // console.log(res);
                 setToken(res.data.token);
