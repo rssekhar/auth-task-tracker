@@ -9,7 +9,8 @@ import NotFound from './components/NotFound';
 export const store = createContext();
 
 function App() {
-  const [token, setToken] = useState(null);
+  const [token, setToken] = useState(() => localStorage.getItem("token") || null);
+
   return (
 
     <store.Provider value={[token, setToken]}>
