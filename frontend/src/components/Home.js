@@ -2,8 +2,8 @@ import React, { useState, useContext, useEffect } from 'react';
 import { store } from '../App';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
-import Layout from './Layout';
-import Dashboard from './Dashboard';
+import Layout from './Layout.js';
+import Dashboard from './Dashboard.js';
 
 const Home = () => {
     const navigate = useNavigate();
