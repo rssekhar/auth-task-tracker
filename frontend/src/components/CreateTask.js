@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import axios from "axios";
-import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js'; // important for modal to work
+//import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js'; // important for modal to work
 const CreateTask = ({list,setList}) => {
   const [task,setTask] = useState({
     taskName : "",
@@ -30,8 +30,8 @@ const CreateTask = ({list,setList}) => {
     }
 
     // Close the modal manually
-    const modal = bootstrap.Modal.getInstance(document.getElementById('myModal'));
-    modal.hide();
+    // const modal = bootstrap.Modal.getInstance(document.getElementById('myModal'));
+    // modal.hide();
     
     setTask({
       taskName : "",
