@@ -1,5 +1,5 @@
 import express from "express"
-import { addTask,getAllTasks,updateTask,deleteTask } from "../controllers/appController.js"
+import { addTask,getAllTasks,updateTask,deleteTask } from "./appController.js"
 const router = express.Router()
 
 router.post("/addTask",addTask)
