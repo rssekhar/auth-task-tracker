@@ -6,7 +6,7 @@ import User from "./models/register.model.js";
 import PrivateAuth from "./middleware/jwt.middleware.js";
 import cors from "cors";
 
-import router from "./routes/appRouter.js"
+import router from "./appRouter.js"
 
 dotenv.config();
 
