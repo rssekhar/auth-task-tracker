@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
-import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js';
+//import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './tasks.styles.css';
 
 const TaskTable = ({ list, setList }) => {
@@ -29,9 +29,9 @@ const TaskTable = ({ list, setList }) => {
       setEditId(_id);
 
       // Open modal manually (Bootstrap)
-      const modalElement = document.getElementById('myEditModal');
-      const modal = new bootstrap.Modal(modalElement);
-      modal.show();
+      // const modalElement = document.getElementById('myEditModal');
+      // const modal = new bootstrap.Modal(modalElement);
+      // modal.show();
     }
   };
 
@@ -51,9 +51,9 @@ const TaskTable = ({ list, setList }) => {
       setData(prev => prev.map(item => (item._id === editId ? { ...item, ...task } : item)));
 
       // Close modal manually
-      const modalElement = document.getElementById('myEditModal');
-      const modal = bootstrap.Modal.getInstance(modalElement);
-      modal.hide();
+      // const modalElement = document.getElementById('myEditModal');
+      // const modal = bootstrap.Modal.getInstance(modalElement);
+      // modal.hide();
     } catch (error) {
       console.log("Update error:", error);
     }
