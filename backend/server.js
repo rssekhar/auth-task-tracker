@@ -6,6 +6,8 @@ import User from "./models/register.model.js";
 import PrivateAuth from "./middleware/jwt.middleware.js";
 import cors from "cors";
 
+import router from "./routes/appRouter.js"
+
 dotenv.config();
 
 const app = express();
@@ -101,7 +103,8 @@ app.get('/home', PrivateAuth, async (req, res) => {
     }
 })
 // --------------------------------------
-
+// create an rest api
+app.use("/tasks",router);
 
 app.listen(PORT, () => {
     dbConnect();
